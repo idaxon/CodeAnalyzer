@@ -1,0 +1,215 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+    padding: 20px 0;
+    z-index: 100;
+    transition: background 0.3s ease;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Landing Page Styles */
+.landing {
+    background: url('https://img.freepik.com/premium-photo/business-data-financial-figures-visualiser-graphic_31965-23939.jpg?semt=ais_hybrid') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.landing .welcome-text {
+    max-width: 600px;
+    position: absolute;
+    top: 150px; /* Moves the text upwards */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.landing h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.landing p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.scroll-down {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* About Section */
+.about {
+    padding: 50px;
+    background-color: #333;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Code Analyzer Section */
+.code-analyzer {
+    padding: 50px;
+    text-align: center;
+    height: 800px;
+    background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8xMV8zZF9taW5pbWFsX2RhdGFfYW5hbHlzaXNfd2F2ZV9zaW1wbGVfYmx1ZV9zb185ZmQwMDBiNy1kYWNlLTRiZDgtYWExZS1hOTk1ZjE5MzcwZjUuanBn.jpg');
+    background-size:cover;
+}
+
+.code-analyzer h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.code-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.code-input, .code-output {
+    width: 45%;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: white;
+}
+
+#code-preview {
+    background-color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Performance Metrics */
+#analysis-results {
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    font-family: monospace;
+    display: inline-block;
+}
+
+/* Contact Us Section */
+.contact {
+    padding: 50px;
+    background-color: #333;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #444;
+    color: white;
+}
+
+.contact button {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}

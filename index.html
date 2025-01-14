@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Performance Analyzer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#landing">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#code-analyzer">Test Code</a></li>
+        </ul>
+    </nav>
+
+    <!-- Landing Page Section -->
+    <section id="landing" class="landing" data-aos="fade-up">
+        <div class="welcome-text">
+            <h1>Welcome to Code Performance Analyzer</h1>
+            <p>Test your code's efficiency with real-time CPU and memory usage analysis</p>
+            <a href="#code-analyzer" class="scroll-down">⏬ Swipe Down</a>
+        </div>
+    </section>
+
+   
+
+    <!-- Code Analyzer Section -->
+    <section id="code-analyzer" class="code-analyzer">
+        <h2>Test Your Code</h2>
+
+        <!-- Code Input & Output -->
+        <div class="code-boxes">
+            <div class="code-input">
+                <h3>Code Input</h3>
+                <textarea id="code-input" placeholder="Paste your code here" oninput="updateCodePreview()"></textarea>
+            </div>
+
+            <div class="code-output">
+                <h3>Code Output</h3>
+                <div id="code-preview"></div>
+            </div>
+        </div>
+
+       <!-- Analyze Button -->
+<button id="analyze-button" onclick="analyzeCode()">Analyze Code</button>
+
+<!-- Real-Time Graph (Initially hidden) -->
+<canvas id="performanceGraph" width="600" height="400" style="display: none;"></canvas>
+
+<!-- Analysis Results Section (Initially hidden) -->
+<div id="analysis-results" style="display: none;">
+    <!-- This will hold the analysis results -->
+     
+</div>
+<!-- Reset Button -->
+<button onclick="resetPage()">Reset</button>
+
+        <!-- Performance Metrics -->
+        <div id="analysis-results">
+            <!-- Results will be displayed here -->
+        </div>
+    </section>
+     <!-- About Section -->
+     <section id="about" class="about" data-aos="fade-up">
+        <h2>About</h2>
+        <p>This tool helps developers analyze their JavaScript code's performance, tracking CPU time, memory usage, and execution speed in real time.</p>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact" data-aos="fade-up">
+        <h2>Contact Us</h2>
+        <p>If you have any feedback or suggestions, feel free to reach out to us!</p>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Code Performance Analyzer. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
